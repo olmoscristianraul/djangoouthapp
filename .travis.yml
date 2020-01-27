@@ -1,0 +1,16 @@
+language: python
+
+python:
+    - "3.6"
+env:
+    global:
+    - secure: 'k)s36^rq2*+q(4t=5_6@2&k4!7sh^dp7(r^^%e(24i_rot)_jg'
+
+services:
+    - postgressql
+install:
+    - pipenv install -r requiere.txt
+
+script:
+    - python manage.py test
+
