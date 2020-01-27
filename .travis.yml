@@ -1,0 +1,13 @@
+language: python
+
+python:
+    - "3.6"
+env:
+    - SECRET_KEY='TEST'
+services:
+    - postgressql
+install:
+    - pipenv install
+
+script:
+    - python manage.py test
